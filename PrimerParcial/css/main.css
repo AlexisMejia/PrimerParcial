@@ -106,6 +106,13 @@ p{
 
 }
 
+/*Flecha*/
+.fa-arrow-circle-down{
+    color: #0AC693;
+    font-size: 4em;
+    padding-top: 60px;
+}
+
 /*Ajustar los iconos de redes sociales a su tamanio adecuado de acuerdo a la imagen base*/
 .fab{
     margin: 0.1em;
@@ -125,6 +132,11 @@ p{
     background-color: #0AC693; 
 }
 
+/*Modificar los articulos a un margen adecuado a la imagen base*/
+.green-area > .container > ul{
+    margin: 3em;
+    margin-top: 1em;
+}
 
 .post {
     padding: 1em;
