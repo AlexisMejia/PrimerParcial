@@ -35,7 +35,7 @@ body {
 }
 
 p{
-    font-size: 1em;
+    font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
 }
@@ -63,7 +63,7 @@ p{
 }
 
 /* Big area */
-
+/*Big hero adaptado para movil*/
 .big-hero{
     display: flex;
     flex-direction: column;
@@ -76,6 +76,7 @@ p{
 .big-hero > .container >p{
     padding: 3px 15.360px 15.360px 15.360px;
 }
+
 
 .big-hero img {
     width: 150px;
@@ -98,17 +99,11 @@ p{
 .social-links{
     list-style: none;
     padding: 0;
-    margin-top: 0em;
+    margin-top: 3em;
     display: flex;
     flex-direction: row;
     justify-content: center
 
-}
-/*Ajustar los iconos de redes sociales a su tamanio adecuado de acuerdo a la imagen base*/
-.fab{
-    margin: 0.1em;
-    font-size: 2em;
-    margin-bottom: 1em;
 }
 
 .social-links li a{
@@ -117,21 +112,9 @@ p{
     font-size: 2.5em;
 }
 
-/*Flecha*/
-.fa-arrow-circle-down{
-    color: #0AC693;
-    font-size: 4em;
-    padding-top: 60px;
-}
 
 .green-area {
     background-color: #0AC693; 
-}
-
-/*Modificar los articulos a un margen adecuado a la imagen base*/
-.green-area > .container > ul{
-    margin: 3em;
-    margin-top: 1em;
 }
 
 
@@ -204,10 +187,9 @@ p{
    width: 200px;
 }
 
-/*Ajustando texto padding*/
 .bio-info p{
     font-size: 16px;
-    padding: 3em;
+    padding: 2em;
     text-align: left;
     line-height: 25px;
     letter-spacing: 2px;
@@ -224,16 +206,9 @@ p{
     margin-top: 1.5em;
 }
 
-/*Ajustando form padding*/
 .contact-form {
     display: flex;
     flex-direction: column;
-    padding: 0em 3em 3em 3em;
-}
-
-/*Convirtiendo el texto en negrita de los formularios*/
-.contact > .contact-form > label{
-    font-weight: bold;
 }
 
 .contact-form input, .contact-form textarea{
@@ -274,7 +249,6 @@ footer{
 
 footer .social-links {
     margin: 0;
-    margin-bottom: 1em;
 }
 
 .menu {
@@ -303,8 +277,6 @@ footer .social-links {
     text-decoration: none;
     
 }
-
-
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
