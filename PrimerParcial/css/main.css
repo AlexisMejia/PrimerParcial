@@ -209,7 +209,7 @@ p{
 
 .bio-info p{
     font-size: 16px;
-    padding: 2em;
+    padding: 3em;
     text-align: left;
     line-height: 25px;
     letter-spacing: 2px;
@@ -275,8 +275,13 @@ footer{
     color:#D7DEE6;
 }
 
+footer > .social-links > li > a > i{
+    margin: 0.2em;
+}
+
 footer .social-links {
     margin: 0;
+    height: 5em;
 }
 
 .menu {
