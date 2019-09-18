@@ -226,10 +226,18 @@ p{
     margin-top: 1.5em;
 }
 
+/*Ajustando form padding*/
 .contact-form {
     display: flex;
     flex-direction: column;
+    padding: 0em 3em 3em 3em;
 }
+
+/*Convirtiendo el texto en negrita de los formularios*/
+.contact > .contact-form > label{
+    font-weight: bold;
+}
+
 
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
