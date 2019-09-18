@@ -25,6 +25,10 @@ body {
     height: 10vh; /*ajustando el header para que aparezca en una sola seccion desde el movil*/
 }
 
+/*Hover aplicado a las opciones de navegacion*/
+.header > nav > ul > li > a:hover{
+    color: red;
+}
 
 .src-only {
     display: none;
@@ -276,7 +280,7 @@ footer{
 }
 
 footer > .social-links > li > a > i{
-    margin: 0.2em;
+    margin: 0.2em; 
 }
 
 footer .social-links {
@@ -358,6 +362,7 @@ footer .social-links {
     /*TODO: FALTA CSS */
 } 
 
+/*Escritorio*/
 @media only screen and (min-width: 1024px) {
 
        /*TODO: FALTA CSS */
@@ -366,6 +371,8 @@ footer .social-links {
 
 }
 
+
+/*Escritorio*/
 @media only screen and (min-width: 1440px) {
 
     /*TODO: FALTA CSS */
