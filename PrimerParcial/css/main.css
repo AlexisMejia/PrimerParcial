@@ -451,12 +451,12 @@ footer .social-links {
         padding: 0px 3em;
     }
 
-
+    /*Modificando la distribucion de imagenes dentro de green area*/
+    .green-area > .post > ul{
+        display: flex;
+        justify-content: space-around;
+    }
     
-
-
-    
-
 }
 
 
