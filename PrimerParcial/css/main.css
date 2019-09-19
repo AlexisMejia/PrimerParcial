@@ -119,7 +119,7 @@ p{
 }
 
 .fa-arrow-circle-down:hover{
-    color: red;
+    color: salmon;
     font-size: 4em;
     padding-top: 60px;
 }
@@ -281,7 +281,7 @@ p{
 .contact-form input[type=submit]:hover {
     background-color: white;
     font-weight: 400;
-    color:red;
+    color: salmon;
     font-size: 1rem;
 }
 .black-decoration{
@@ -370,16 +370,32 @@ footer .social-links {
         margin-top: 1em;
     }
 
+    /**/
     nav > ul > li > a{
         font-size: 0.75em;
     }
 
+    /**/
     .header{
         display: flex;
         align-content: space-between;
         margin: 0em 1em 0em 1em;
     }
 
+    /*Ajustar el texto a una proporcion adecuada a una tableta, tomando en cuentra el tamanio del form*/
+    .bio-info p{
+        font-size: 16px;
+        padding: 5em;
+        text-align: left;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+
+    /*Modificar los articulos a un margen adecuado a la imagen base*/
+.green-area > .container > ul{
+    margin: 3em;
+    margin-top: 1em;
+}
 
 
     /*TODO: FALTA CSS */
