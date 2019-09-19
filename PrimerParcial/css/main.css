@@ -418,14 +418,7 @@ footer .social-links {
         padding: 10px 15.360px 15.360px 15.360px;
     }
 
-    .about > .container > .bio-info > .contact{
-            display: grid;
-            margin: 5em auto;
-            width: 80%;
-            grid-template-columns: repeat(2, 1fr);
-        
-    }
-
+    
 
 }
 
