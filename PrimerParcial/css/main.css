@@ -21,13 +21,17 @@ body {
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 0em 4em 0em 2em;
+    margin: 0em 1em 0em 2em;
     height: 10vh; /*ajustando el header para que aparezca en una sola seccion desde el movil*/
 }
 
 /*Hover aplicado a las opciones de navegacion*/
 .header > nav > ul > li > a:hover{
-    color: red;
+    color: salmon;
+}
+
+.header > nav > ul > li{
+    font-size: 25px;
 }
 
 .src-only {
@@ -404,8 +408,22 @@ footer .social-links {
 /*Escritorio*/
 @media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
+    .big-hero > .container > h2{
+        font-size: 2em;
+    }
+      /*Modificar el padding del texto para que este alineado al nombre Nestor Aldana*/
+    .big-hero > .container >p{
+        font-size: 1em;
+        padding: 10px 15.360px 15.360px 15.360px;
+    }
 
+    .about > .container > .bio-info > .contact{
+            display: grid;
+            margin: 5em auto;
+            width: 80%;
+            grid-template-columns: repeat(2, 1fr);
+        
+    }
 
 
 }
