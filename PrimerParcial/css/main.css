@@ -18,7 +18,7 @@ body {
     font-weight: 400;
 }
 
-.header {
+.header{
     display: flex;
     justify-content: space-between;
     margin: 0em 4em 0em 2em;
@@ -67,6 +67,7 @@ p{
 }
 
 /* Big area */
+
 /*Big hero adaptado para movil*/
 .big-hero{
     display: flex;
@@ -276,7 +277,7 @@ p{
     font-size: 1rem;
 }
 
-/**/
+/*Anadiendo hover al boton de contacto*/
 .contact-form input[type=submit]:hover {
     background-color: white;
     font-weight: 400;
@@ -369,6 +370,15 @@ footer .social-links {
         margin-top: 1em;
     }
 
+    nav > ul > li > a{
+        font-size: 0.75em;
+    }
+
+    .header{
+        display: flex;
+        align-content: space-between;
+        margin: 0em 1em 0em 1em;
+    }
 
 
 
