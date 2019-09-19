@@ -384,7 +384,7 @@ footer .social-links {
 
     /*Ajustar el texto a una proporcion adecuada a una tableta, tomando en cuentra el tamanio del form*/
     .bio-info p{
-        font-size: 16px;
+        font-size: 20px;
         padding: 50px 80px 80px 80px;
         text-align: left;
         line-height: 25px;
