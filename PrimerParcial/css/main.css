@@ -18,6 +18,8 @@ body {
     font-weight: 400;
 }
 
+/*Definiendo de que tipo sera el header por medio de display flex, para que el 
+contenido pueda ser mas legible al usuario*/
 .header{
     display: flex;
     justify-content: space-between;
@@ -30,6 +32,7 @@ body {
     color: salmon;
 }
 
+/*Definiendo el tamanio de el contenido dentro de la li*/
 .header > nav > ul > li{
     font-size: 25px;
 }
@@ -48,24 +51,30 @@ p{
     line-height: 25px;
 }
 
+/*Definiendo el tamanio del isotipo ubicado en header*/
 .logo {
     width: 90px;
     margin: 1em;
 }
 
+/*Clase definida para una barra de opciones que aparece solamnente
+cuando se esta en un dispositivo movil (telefono)*/
 .options {
     color: inherit;
     text-decoration: none;
     position: relative;
     top: 30%;
     right: 95%;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 
 }
+
+/*seleccionando por medio de selector de hijos  y el ultimo hijo 
+de la etiqueta <i> y modificarle su tamanio*/
 .options i:last-child {
     font-size: 1.6rem;
 }
@@ -86,11 +95,14 @@ p{
     padding: 3px 15.360px 15.360px 15.360px;
 }
 
-
+/*seleccionando por medio de selector de hijos a la imagen de presentacion
+-Nestor Aldana-*/
 .big-hero img {
     width: 150px;
 }
 
+/*seleccionando por medio de selector de hijos el texto h2 
+-Nestor Aldana-*/
 .big-hero h2 {
     font-size: 1.875em;
     font-weight: 700;
@@ -98,6 +110,8 @@ p{
     margin-top: 1em ;
 }
 
+/*seleccionando por medio de selector de hijos al parrafo 
+-Profesor, investigador, desarrollador web y móvil-*/
 .big-hero p {
     font-size: 0.7em;;
     color: #D7DEE6;
@@ -116,12 +130,16 @@ p{
 }
 
 /*Flecha*/
+/*Flecha en direccion hacia abajo, que tiene como funcion principal
+dirigir al usuario a la siguiente seccion*/
 .fa-arrow-circle-down{
     color: #0AC693;
     font-size: 4em;
     padding-top: 60px;
 }
 
+/*Anadiendo hover al botton fa-arrow-circle-down para que cuando el usuario
+acerque el raton cambie de color*/
 .fa-arrow-circle-down:hover{
     color: salmon;
     font-size: 4em;
@@ -136,13 +154,15 @@ p{
 }
 
 
+/*seleccionando por medio de selector de hijos a las etiquetas de
+li y a*/
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 2.5em;
 }
 
-
+/*area donde se han colocado la lista de articulos*/
 .green-area {
     background-color: #0AC693; 
 }
@@ -152,6 +172,7 @@ p{
     margin: 4em;
     margin-top: 1em;
 }
+
 
 .post {
     padding: 1em;
@@ -207,10 +228,13 @@ p{
 
 /* About */
 
+/*definiendo un margen superior de 2em a la seccion de about o acerca de*/
 .about{
     margin-top: 2em;
 }
 
+/*seleccionando por medio de selectores de hijos a h2, modificandole 
+su letra, que comience en mayuscula, su ancho y alt y margen*/
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -218,10 +242,14 @@ p{
     margin: 2em;
 }
 
+/*modificando el ancho de la imagen colocada en bio-info*/
 .bio-info img{
    width: 200px;
 }
 
+/*modificando por medio de selectores de hijos, al parrafo determinandole
+el tamanio de su texto, padding, alineado a la izquierda y el espaciado de
+letras*/
 .bio-info p{
     font-size: 16px;
     padding: 3em;
@@ -230,6 +258,7 @@ p{
     letter-spacing: 2px;
 }
 
+/*definiendo que tipo de display sera el div con la clase .contact*/
 .contact {
     display: flex;
     flex-direction: column;
@@ -237,6 +266,7 @@ p{
     padding: 0px 1em;
 }
 
+/**/
 .contact * + * {
     margin-top: 1.5em;
 }
@@ -374,12 +404,13 @@ footer .social-links {
         margin-top: 1em;
     }
 
-    /**/
+    /*Ajustando el font size de los textos en la barra de navegacion recorriendo por medio
+    de etiquetas o selectores*/
     nav > ul > li > a{
         font-size: 0.75em;
     }
 
-    /**/
+    /*Dividiendo le isotipo con la barra de navegacion por medio de display: flex*/
     .header{
         display: flex;
         align-content: space-between;
@@ -410,14 +441,16 @@ footer .social-links {
         flex: 1 0 300px;
     }
     
-
-
-    /*TODO: FALTA CSS */
 } 
 
 /*Escritorio*/
 @media only screen and (min-width: 1024px) {
 
+    /*Modificando la medida de la imagen -Nestor Aldana-*/
+    .big-hero img{
+        width: 10em;
+    } 
+    
     /*Modificando "Nestor Aldana"*/
     .big-hero > .container > h2{
         font-size: 2em; 
@@ -427,6 +460,14 @@ footer .social-links {
         font-size: 1em;
         padding: 10px 15.360px 15.360px 15.360px;
     }
+
+    /*Ajustar los iconos de redes sociales a su tamanio adecuado de acuerdo a la imagen base*/
+    .fab{
+        margin: 0.3em;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
     /*Definiendo el contenedor de tipo grid para seccionar about y contact*/
     .about > .container{
         display: grid;
@@ -469,4 +510,6 @@ footer .social-links {
         margin: 0 auto;
         max-width: 1440px;
     }
+
+  
 }
