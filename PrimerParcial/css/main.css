@@ -37,14 +37,18 @@ contenido pueda ser mas legible al usuario*/
     font-size: 25px;
 }
 
+/**/
 .src-only {
     display: none;
 }
 
+/*Clase utilizada para ocultar la fecha de salto de seccion cuando el usario
+navegue en su movil*/
 .hide-mobile {
     display: none;
 }
 
+/**/
 p{
     font-size: 0.75em;
     padding: 1rem;
@@ -173,7 +177,7 @@ li y a*/
     margin-top: 1em;
 }
 
-
+/**/
 .post {
     padding: 1em;
     margin-bottom: -2px;
@@ -321,6 +325,7 @@ letras*/
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
+
 
 footer{
     background-color: #0D5061;
@@ -497,7 +502,17 @@ footer .social-links {
         display: flex;
         justify-content: space-around;
     }
-    
+
+    /*Configurando las propiedades de la ultima imagen para que en un futuro
+    pueda adaptarse a la insercion de otra imagen o articulo*/
+    .post ul li:last-child {
+        min-height: 350px;
+        max-height: 3500px;
+        max-width: 40%;
+        margin: 1rem 2rem;
+        flex: 1 0 300px;
+    }
+
 }
 
 
