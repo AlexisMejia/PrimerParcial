@@ -3,7 +3,7 @@
 /* El CSS siguiente esta pensando primero para moviles y luego para 
    Escritiorio*/
 
-
+/*seleccionando todos los elementos html*/
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ contenido pueda ser mas legible al usuario*/
     font-size: 25px;
 }
 
-/**/
+/*clase de tipo source*/
 .src-only {
     display: none;
 }
@@ -50,7 +50,7 @@ navegue en su movil*/
     display: none;
 }
 
-/**/
+/*todos los parrafos definididos por el mismo tamanio, padding y altura de casilla*/
 p{
     font-size: 0.75em;
     padding: 1rem;
@@ -134,7 +134,6 @@ de la etiqueta <i> y modificarle su tamanio*/
     display: flex;
     flex-direction: row;
     justify-content: center
-
 }
 
 /*Flecha*/
@@ -181,7 +180,7 @@ li y a*/
     margin-top: 1em;
 }
 
-/**/
+/*definiendo margen inferior y padding a la clase post*/
 .post {
     padding: 1em;
     margin-bottom: -2px;
@@ -289,7 +288,7 @@ letras*/
     padding: 0px 1em;
 }
 
-/**/
+/*seleccionando el siguiente hijo que le sigue a todo contact*/
 .contact * + * {
     margin-top: 1.5em;
 }
@@ -345,6 +344,7 @@ radio de borde, tamanio de letra y ancho*/
 }
 
 
+/*fondo de tipo oscuro*/
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
@@ -367,6 +367,7 @@ footer .social-links {
     height: 5em;
 }
 
+/*definiendo propiedades del menu de opciones de navegacion colocados en header*/
 .menu {
     background-color: #112935;
     position: absolute;
@@ -377,18 +378,21 @@ footer .social-links {
     height: calc(100vh - 60px);
 }
 
+/*propiedades dentro de menu de opciones con respecto a su texto*/
 .menu {
     list-style: none;
     text-align: left;
     padding: 1em;
 }
 
+/*propiedades de las listas de opciones dentro de nav*/
 .menu li {
     display: block;
     padding: 0.5em;
     margin-top: 5px;
 }
 
+/*propiedades de texto dentro de la etiquet a  href*/
 .menu li a {
     color: white;
     text-decoration: none;
@@ -398,7 +402,7 @@ footer .social-links {
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
-
+    /*seleccionador de hijos a ul, definiendo de tipo flex, y de flex wrap*/
     .post ul {
         list-style: none;
         display: flex;
@@ -421,7 +425,7 @@ footer .social-links {
         margin: 1.5em;
     }
 
-
+    /*mostrando la lista de opciones en escritorio*/
     .show-desktop {
         display: block;
     }
@@ -431,7 +435,7 @@ footer .social-links {
         display: none;
     }
 
-
+    /*definiendo propiedades del menu de opciones de navegacion colocados en header*/
     .menu {
         background-color: #112935; 
         position: static;
