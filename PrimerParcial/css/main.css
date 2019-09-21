@@ -2,6 +2,8 @@
 
 /* El CSS siguiente esta pensando primero para moviles y luego para 
    Escritiorio*/
+
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -123,6 +125,8 @@ de la etiqueta <i> y modificarle su tamanio*/
 }
 
 /* Social links*/
+
+/*Definiendo de tipo flex los logos de github y twitter*/
 .social-links{
     list-style: none;
     padding: 0;
@@ -192,12 +196,13 @@ mayuscula*/
     margin: 1em;
 }
 
-/**/
+/*definiendo el tipo de lista que existen dentro de ul*/
 .post ul {
     list-style: none;
 }
 
-/**/
+/*Definiendo el maximo y minimo de tamanio de lo que hay dentro de listas, junto con su
+margen*/
 .post ul li {
     min-height: 300px;
     max-width: 350px;
@@ -301,7 +306,8 @@ letras*/
     font-weight: bold;
 }
 
-/**/
+/*cSeleccionando cada clase individualmente para darle propiedades de padding, border, 
+radio de borde, tamanio de letra y ancho*/
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
     border: none;
@@ -337,6 +343,7 @@ letras*/
     color: darkgoldenrod;
     font-size: 1rem;
 }
+
 
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
@@ -375,6 +382,7 @@ footer .social-links {
     text-align: left;
     padding: 1em;
 }
+
 .menu li {
     display: block;
     padding: 0.5em;
@@ -390,6 +398,7 @@ footer .social-links {
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
+
     .post ul {
         list-style: none;
         display: flex;
@@ -397,6 +406,8 @@ footer .social-links {
         justify-content: center;
     }
     
+    /*seleccionador de hijos y definiendo minimo y maximo de altura, margen y 
+    flex*/
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
@@ -404,19 +415,22 @@ footer .social-links {
         flex: 1 0 300px;
     }
 
-
+    /*tamanio de logo y margen*/
     .logo {
         width: 150px;
         margin: 1.5em;
     }
 
+
     .show-desktop {
         display: block;
     }
 
+    /*menu desplegable mostrandose en pantalla*/
     .hide-desktop {
         display: none;
     }
+
 
     .menu {
         background-color: #112935; 
@@ -552,6 +566,32 @@ footer .social-links {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
+    }
+
+    /*definiendo margenes de header ajustadoa 1440px*/
+    .header{
+        margin: 0em;
+    }
+
+    /*Modificando "Nestor Aldana"*/
+    .big-hero > .container > h2{
+        font-size: 2.5em; 
+    }
+
+    /*Modificando la medida de la imagen -Nestor Aldana-*/
+    .big-hero img{
+        width: 13em;
+    } 
+
+    .green-area{
+        height: 80vh;
+    }
+
+    /*Ajustar los iconos de redes sociales a su tamanio adecuado de acuerdo a la imagen base*/
+    .fab{
+        margin: 0.25em;
+        font-size: 2em;
+        margin-bottom: 1em;
     }
 
   
