@@ -587,8 +587,13 @@ footer .social-links {
         width: 13em;
     } 
 
+    /*definiendo tamanio de green area */
     .green-area{
         height: 80vh;
+    }
+    /*definiendo tamanio de articulos*/
+    .post ul li article {
+        height: 60vh;
     }
 
     /*Ajustar los iconos de redes sociales a su tamanio adecuado de acuerdo a la imagen base*/
